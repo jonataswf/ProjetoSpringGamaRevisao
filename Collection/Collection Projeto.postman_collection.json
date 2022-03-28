@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "7fe5c80a-b2d4-4410-a066-fe0f1cc8f62d",
+		"name": "Collection Projeto",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Correntistas",
+			"item": [
+				{
+					"name": "Get All Correntistas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/correntista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"correntista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Correntista",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ag\":555551,\n    \"conta\":5555555,\n    \"nome\":\"patricia@gmail.com\",\n    \"email\":\"Patricia\",\n    \"telefone\":19555555555,\n    \"saldo\":27358.40\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/correntista",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"correntista"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Correntista",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/correntista/55555",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"correntista",
+								"55555"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Correntista",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/correntista/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"correntista",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fluxos",
+			"item": [
+				{
+					"name": "Get All Fluxos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/fluxo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fluxo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Fluxos",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ag\":333223,\n    \"conta\":33333333,\n    \"fluxo\":3,\n    \"entrada\":3250.89,\n    \"saida\":425.35\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/fluxo",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fluxo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Fluxo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/fluxo/55555",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fluxo",
+								"55555"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Fluxo",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/fluxo/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"fluxo",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

@@ -1,16 +1,15 @@
 package br.com.revisao.projeto.model.correntista;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "correntista")
-public class Correntista {
+public class Correntista implements Serializable {
+
 
     @EmbeddedId
-    @JsonProperty("DadosBancarios")
     private CorrentistaId id;
 
     @Column(length = 50, nullable = false)

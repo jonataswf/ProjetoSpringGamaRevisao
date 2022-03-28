@@ -4,11 +4,12 @@ import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.io.Serializable;
 import java.math.BigDecimal;
 
 @Entity
 @Table(name = "fluxo_caixa")
-public class FluxoCaixa {
+public class FluxoCaixa implements Serializable {
 
     @EmbeddedId
     private FluxoCaixaId id;

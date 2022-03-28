@@ -8,7 +8,7 @@ No banco de dados utilizaremos o contexto do InnerJoin entre as tabelas
 
 Segue abaixo a estrutura das tabelas.
 
-####-- Tabela de Correntista  
+#### Tabela de Correntista  
 
 create table correntista( <br/>
 ag int not null, <br>
@@ -20,7 +20,7 @@ saldo decimal(8,2) not null, <br>
 primary key (ag,conta)); <br>
 
 
-#### -- Tabela de Fluxo_Caixa
+#### Tabela de Fluxo_Caixa
 
 create table fluxo_caixa( <br>
 ag int not null, <br>

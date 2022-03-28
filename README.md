@@ -36,3 +36,4 @@ primary key(ag,conta,fluxo));
 compostas, foi utilizado no codigo duas anotações @Embeddable e @EmbeddedId <br>
 em duas classes para identificar o id, precisa ver como pegar os ids do objeto nos<br>
 metodos findbyid e deletebyid do jpa
+#### Obs.: Os metodos Get e Post ja estão funcionando para as duas tabelas, na pasta Collection esta a collection do postman.
